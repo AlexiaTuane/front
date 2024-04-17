@@ -1,0 +1,90 @@
+.login-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  position: relative;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+  background-size: cover;
+  background-position: center;
+  animation: moveBackground 20s infinite linear;
+}
+
+@keyframes moveBackground {
+  0% {
+    background-position: center;
+  }
+  50% {
+    background-position: top;
+  }
+  100% {
+    background-position: center;
+  }
+}
+
+.glass-form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: rgba(13, 13, 13, 0.406);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  width: 300px;
+  height: 300px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-title {
+  color: #fff;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.login-input {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(5px);
+  color: #fff;
+  outline: none;
+}
+
+.login-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background: linear-gradient(to right, #15708b, #3bb1d6);
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+}
+
+.login-button:hover {
+  background: linear-gradient(to right, #3bb1d6, hsla(150, 19%, 69%, 0.886));
+}
+
+.Exodus {
+  position: relative;
+  width: 100px; /*valor para o tamanho desejado */
+  height: auto; /*valor para manter a proporção da imagem */
+  margin-bottom: 5%; /*valor para dar espaço entre a imagem e o formulário */
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}

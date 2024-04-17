@@ -1,0 +1,84 @@
+/* Estilo do arquivo: missaovisaovalor */
+.missao-visao-valor-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px;
+  }
+  
+  .missao-visao-valor-card {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: calc(25% - 20px);
+    box-sizing: border-box;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    margin: 5px;
+    cursor: pointer;
+  }
+  
+  .missao-visao-valor-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .missao-visao-valor-header {
+    background-color: #3BB1D6;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    box-sizing: border-box;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+  
+  .missao-visao-valor-header svg {
+    font-size: 30px;
+    margin-right: 10px; /* Adicionando um espaçamento à direita do ícone */
+    transition: transform 0.3s ease; /* Adicionando uma transição suave para a animação */
+}
+
+.missao-visao-valor-header:hover svg {
+  transform: rotate(360deg); /* Rotacionando os ícones em 360 graus ao passar o mouse sobre o cabeçalho */
+}
+
+
+  .missao-visao-valor-header h3 {
+    font-size: 18px;
+    margin-top: 8px;
+    margin-bottom: 0; /* Removendo o espaçamento inferior do título */
+  }
+  
+  .missao-visao-valor-content {
+    padding: 20px;
+    text-align: justify;
+  }
+  
+  .missao-visao-valor-content p {
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: justify;
+    color: #555;
+    margin-bottom: 0;
+  }
+  
+  @media (max-width: 768px) {
+    .missao-visao-valor-card {
+      width: calc(50% - 20px);
+    }
+  }
+  
+  
+  
+  /* Estilo do arquivo: missaovisaovalor */
+  

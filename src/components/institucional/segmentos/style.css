@@ -1,0 +1,120 @@
+/* Importando as fontes do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Roboto:wght@400;700&family=Open+Sans:wght@400;700&family=Lato:wght@400;700&display=swap');
+
+.segmentos{
+  background-color: rgba(169, 169, 169, 0.107);
+}
+
+.slick-slide {
+  margin:  15px; /* Adicione o espaçamento horizontal desejado entre os cards */
+}
+
+.segmentos-container {
+  align-items: center;
+  padding: 0 125px; /* Adiciona um espaçamento horizontal */
+}
+
+.segmentos-title {
+  text-align: center;
+  color: #2c2b29;
+  margin-top: 100px;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+}
+
+.counter {
+  color: #3BB1D6;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  height: 150px;
+  width: 40px;
+  padding: 30px 25px 25px;
+  margin: 0 auto;
+  border: 3px solid #3BB1D6;
+  border-radius: 20px 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.counter:before,
+.counter:after {
+  content: "";
+  background: #f3f3f3;
+  border-radius: 20px;
+  box-shadow: 4px 4px 2px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  left: 10px; /* Ajusta a posição das sombras */
+  top: 10px; /* Ajusta a posição das sombras */
+  bottom: 10px; /* Ajusta a posição das sombras */
+  right: 10px; /* Ajusta a posição das sombras */
+  z-index: -1;
+}
+
+.counter:after {
+  background: transparent;
+  width: 80px; /* Reduz o tamanho da parte inferior das sombras */
+  height: 70px; /* Reduz o tamanho da parte inferior das sombras */
+  border: 10px solid #3BB1D6;
+  border-top: none;
+  border-right: none;
+  border-radius: 0 0 0 20px;
+  box-shadow: none;
+  top: auto;
+  left: -5px; /* Ajusta a posição das sombras */
+  bottom: -5px; /* Ajusta a posição das sombras */
+  right: auto;
+}
+
+.counter .counter-icon {
+  font-size: 35px;
+  line-height: 35px;
+  margin: 0 0 10px;
+  transition: all 0.3s ease 0s;
+}
+
+.counter:hover .counter-icon {
+  transform: rotateY(360deg);
+}
+
+.counter .counter-value {
+  color: #555;
+  font-size: 25px; /* Reduz o tamanho do valor */
+  font-weight: 600;
+  line-height: 20px;
+  margin: 0 0 10px;
+  display: block;
+  transition: all 0.3s ease 0s;
+}
+
+.counter:hover .counter-value {
+  text-shadow: 2px 2px 0 #d1d8e0;
+}
+
+.counter h3 {
+  font-size: 15px; /* Reduz o tamanho do título */
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+}
+
+.counter.blue {
+  color: #3BB1D6;
+  border-color: #3BB1D6;
+}
+
+.counter.blue:after {
+  border-bottom-color: #3BB1D6;
+  border-left-color: #3BB1D6;
+}
+
+/* Adicionando regra para diminuir a distância em telas menores */
+@media screen and (max-width: 990px) {
+  .segmentos-container {
+    padding: 0 10px; /* Reduz ainda mais o espaçamento horizontal */
+  }
+  .counter {
+    width: calc(50% - 20px); /* Define o tamanho dos cards para 50% da largura da tela, com um espaçamento de 20px entre eles */
+    margin: 10px; /* Define o espaçamento entre os cards */
+  }
+}

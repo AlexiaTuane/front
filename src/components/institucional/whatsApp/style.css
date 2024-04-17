@@ -1,0 +1,27 @@
+#whatsapp {
+    position: fixed;
+    align-items: center;
+    bottom: 10px;
+    right: 20px;
+    z-index: 999;
+  }
+  
+  .whatsapp-button {
+    position: relative;
+    border-top-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    background-color: #25D366;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  
+  .contact-icon {
+    /* Centralizar o ícone no meio do botão */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  

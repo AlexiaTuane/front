@@ -1,0 +1,41 @@
+.sobre-title {
+    font-weight: bold;
+    margin-bottom: 15px; 
+    font-family: 'Roboto', sans-serif;
+    text-align: center; 
+  }
+  
+  .sobre-description {
+    font-family: 'Arial', sans-serif;
+    font-size: 20px;
+    line-height: 1.6;
+    color: #333;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: justify; /* Centraliza o texto */
+  }
+  
+  .sobre-text {
+    text-align: center; /* Centraliza o texto */
+  }
+  
+  .sobre-image {
+    text-align: center; /* Centraliza a imagem */
+  }
+  
+  .sobre-image img {
+    max-width: 100%;
+    height: auto;
+    display: block; /* Para centralizar a imagem corretamente */
+    margin: 0 auto; /* Centraliza a imagem */
+  }
+  
+  .sobre-container {
+    padding: 50px 20px;
+    
+    /* Centraliza todo o conteúdo dentro do container */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
